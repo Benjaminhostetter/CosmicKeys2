@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Keys 3D</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Set up the scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Create the spaceship (simple cube for now)
+        const shipGeometry = new THREE.BoxGeometry(1, 0.5, 2);
+        const shipMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const ship = new THREE.Mesh(shipGeometry, shipMaterial);
+        scene.add(ship);
+
+        // Position the ship and camera
+        ship.position.y = -5;
+        camera.position.z = 10;
+
+        // Create asteroids array to hold multiple asteroids
+        const asteroids = [];
+
+        function spawnAsteroid() {
+            const asteroidGeometry = new THREE.SphereGeometry(1, 32, 32);
+            const asteroidMaterial = new THREE.MeshBasicMaterial({ color: 0x8B4513 });
+            const asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
+            
+            // Random position around the scene
+            asteroid.position.set(Math.random() * 20 - 10, Math.random() * 20 - 10, Math.random() * 20 - 10);
+            asteroids.push(asteroid);
+            scene.add(asteroid);
+        }
+
+        // Spawn a few asteroids to start with
+        for (let i = 0; i < 5; i++) {
+            spawnAsteroid();
+        }
+
+        // Function to update the game logic
+        function update() {
+            // Move each asteroid towards the ship
+            asteroids.forEach(asteroid => {
+                const direction = new THREE.Vector3();
+                direction.subVectors(ship.position, asteroid.position).normalize();
+                asteroid.position.add(direction.multiplyScalar(0.05)); // Adjust speed as needed
+
+                // Check for collision with the ship (simple distance check)
+                if (asteroid.position.distanceTo(ship.position) < 1) {
+                    console.log('Collision Detected!');
+                    // Handle collision logic (e.g., game over)
+                }
+            });
+        }
+
+        // Function to render the scene
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Update game logic
+            update();
+
+            // Render the scene from the perspective of the camera
+            renderer.render(scene, camera);
+        }
+
+        // Start the animation loop
+        animate();
+
+        // Handle keyboard input for ship movement
+        document.addEventListener('keydown', (event) => {
+            const speed = 0.2; // Adjust speed as needed
+            switch (event.code) {
+                case 'ArrowLeft':
+                    ship.position.x -= speed;
+                    break;
+                case 'ArrowRight':
+                    ship.position.x += speed;
+                    break;
+                case 'ArrowUp':
+                    ship.position.z -= speed; // Forward
+                    break;
+                case 'ArrowDown':
+                    ship.position.z += speed; // Backward
+                    break;
+            }
+        });
+
+    </script>
+</body>
+</html>

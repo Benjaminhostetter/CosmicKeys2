@@ -1,2 +1,2 @@
-# CosmicKeys2
-Game to Learn Piano FAST
+# CosmicKeys
+An epic piano game to help people learn piano FAST

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Keys</title>
+    <link rel="stylesheet" href="cosmickeys.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cosmic Keys</h1>
+        <div class="content">
+            <canvas id="gameCanvas"></canvas>
+<div id="highScoresSidebar">
+    <h2>High Scores</h2>
+    <table id="highScoresTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Wave</th>
+                <th>Score</th>
+                <th>Key</th>
+            </tr>
+        </thead>
+        <tbody id="highScoresList">
+            <!-- High scores will be populated here -->
+        </tbody>
+    </table>
+</div>
+        </div>
+    </div>
+    <div id="nameInputOverlay" style="display:none;">
+        <div id="nameInputContainer">
+            <h2>New High Score! Enter Your Name:</h2>
+            <input type="text" id="playerNameInput" maxlength="20" />
+            <button id="submitNameButton">Submit</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="cosmickeys.js"></script>
+</body>
+</html>
