@@ -48,23 +48,65 @@ const ship = {
 };
 
 const asteroidImagePaths = {
+    'A': [
+        'assets/AsteroidKeys/A/A_big1.png',
+        'assets/AsteroidKeys/A/A_big2.png',
+        'assets/AsteroidKeys/A/A_big3.png',
+        'assets/AsteroidKeys/A/A_big4.png',
+    ],
+    'Ab': [
+        'assets/AsteroidKeys/Ab/Ab_big1.png',
+        'assets/AsteroidKeys/Ab/Ab_big2.png',
+        'assets/AsteroidKeys/Ab/Ab_big3.png',
+        'assets/AsteroidKeys/Ab/Ab_big4.png',
+    ],
+    'B': [
+        'assets/AsteroidKeys/B/B_big1.png',
+        'assets/AsteroidKeys/B/B_big2.png',
+        'assets/AsteroidKeys/B/B_big3.png',
+        'assets/AsteroidKeys/B/B_big4.png',
+    ],
+    'Bb': [
+        'assets/AsteroidKeys/Bb/Bb_big1.png',
+        'assets/AsteroidKeys/Bb/Bb_big2.png',
+        'assets/AsteroidKeys/Bb/Bb_big3.png',
+        'assets/AsteroidKeys/Bb/Bb_big4.png',
+    ],
     'C': [
         'assets/AsteroidKeys/C/c_big1.png',
         'assets/AsteroidKeys/C/c_big2.png',
         'assets/AsteroidKeys/C/c_big3.png',
         'assets/AsteroidKeys/C/c_big4.png'
     ],
-    'Db': [
-        'assets/AsteroidKeys/Db/db_big1.png',
-        'assets/AsteroidKeys/Db/db_big2.png',
-        'assets/AsteroidKeys/Db/db_big3.png',
-        'assets/AsteroidKeys/Db/db_big4.png'
-    ],
     'D': [
-        'assets/AsteroidKeys/D/d_big1.png',
-        'assets/AsteroidKeys/D/d_big2.png',
-        'assets/AsteroidKeys/D/d_big3.png',
-        'assets/AsteroidKeys/D/d_big4.png'
+        'assets/AsteroidKeys/D/D_big1.png',
+        'assets/AsteroidKeys/D/D_big2.png',
+        'assets/AsteroidKeys/D/D_big3.png',
+        'assets/AsteroidKeys/D/D_big4.png',
+    ],
+    'Db': [
+        'assets/AsteroidKeys/Db/Db_big1.png',
+        'assets/AsteroidKeys/Db/Db_big2.png',
+        'assets/AsteroidKeys/Db/Db_big3.png',
+        'assets/AsteroidKeys/Db/Db_big4.png',
+    ],
+    'E': [
+        'assets/AsteroidKeys/E/E_big1.png',
+        'assets/AsteroidKeys/E/E_big2.png',
+        'assets/AsteroidKeys/E/E_big3.png',
+        'assets/AsteroidKeys/E/E_big4.png',
+    ],
+    'Eb': [
+        'assets/AsteroidKeys/Eb/Eb_big1.png',
+        'assets/AsteroidKeys/Eb/Eb_big2.png',
+        'assets/AsteroidKeys/Eb/Eb_big3.png',
+        'assets/AsteroidKeys/Eb/Eb_big4.png',
+    ],
+    'F': [
+        'assets/AsteroidKeys/F/F_big1.png',
+        'assets/AsteroidKeys/F/F_big2.png',
+        'assets/AsteroidKeys/F/F_big3.png',
+        'assets/AsteroidKeys/F/F_big4.png',
     ],
     'G': [
         'assets/AsteroidKeys/G/G_big1.png',
@@ -72,34 +114,75 @@ const asteroidImagePaths = {
         'assets/AsteroidKeys/G/G_big3.png',
         'assets/AsteroidKeys/G/G_big4.png'
     ],
-    'A': [
-        'assets/AsteroidKeys/A/A_big1.png',
-        'assets/AsteroidKeys/A/A_big2.png',
-        'assets/AsteroidKeys/A/A_big3.png',
-        'assets/AsteroidKeys/A/A_big4.png'
+    'Gb': [
+        'assets/AsteroidKeys/Gb/Gb_big1.png',
+        'assets/AsteroidKeys/Gb/Gb_big2.png',
+        'assets/AsteroidKeys/Gb/Gb_big3.png',
+        'assets/AsteroidKeys/Gb/Gb_big4.png',
     ]
-    // Add paths for other keys...
 };
 
 
 const miniAsteroidImagePaths = {
+    'A': [
+        'assets/AsteroidKeys/A/A_small1.png',
+        'assets/AsteroidKeys/A/A_small2.png',
+        'assets/AsteroidKeys/A/A_small3.png',
+        'assets/AsteroidKeys/A/A_small4.png',
+    ],
+    'Ab': [
+        'assets/AsteroidKeys/Ab/Ab_small1.png',
+        'assets/AsteroidKeys/Ab/Ab_small2.png',
+        'assets/AsteroidKeys/Ab/Ab_small3.png',
+        'assets/AsteroidKeys/Ab/Ab_small4.png',
+    ],
+    'B': [
+        'assets/AsteroidKeys/B/B_small1.png',
+        'assets/AsteroidKeys/B/B_small2.png',
+        'assets/AsteroidKeys/B/B_small3.png',
+        'assets/AsteroidKeys/B/B_small4.png',
+    ],
+    'Bb': [
+        'assets/AsteroidKeys/Bb/Bb_small1.png',
+        'assets/AsteroidKeys/Bb/Bb_small2.png',
+        'assets/AsteroidKeys/Bb/Bb_small3.png',
+        'assets/AsteroidKeys/Bb/Bb_small4.png',
+    ],
     'C': [
         'assets/AsteroidKeys/C/c_small1.png',
         'assets/AsteroidKeys/C/c_small2.png',
         'assets/AsteroidKeys/C/c_small3.png',
         'assets/AsteroidKeys/C/c_small4.png'
     ],
-    'Db': [
-        'assets/AsteroidKeys/Db/db_small1.png',
-        'assets/AsteroidKeys/Db/db_small2.png',
-        'assets/AsteroidKeys/Db/db_small3.png',
-        'assets/AsteroidKeys/Db/db_small4.png'
-    ],
     'D': [
-        'assets/AsteroidKeys/D/d_small1.png',
-        'assets/AsteroidKeys/D/d_small2.png',
-        'assets/AsteroidKeys/D/d_small3.png',
-        'assets/AsteroidKeys/D/d_small4.png'
+        'assets/AsteroidKeys/D/D_small1.png',
+        'assets/AsteroidKeys/D/D_small2.png',
+        'assets/AsteroidKeys/D/D_small3.png',
+        'assets/AsteroidKeys/D/D_small4.png',
+    ],
+    'Db': [
+        'assets/AsteroidKeys/Db/Db_small1.png',
+        'assets/AsteroidKeys/Db/Db_small2.png',
+        'assets/AsteroidKeys/Db/Db_small3.png',
+        'assets/AsteroidKeys/Db/Db_small4.png',
+    ],
+    'E': [
+        'assets/AsteroidKeys/E/E_small1.png',
+        'assets/AsteroidKeys/E/E_small2.png',
+        'assets/AsteroidKeys/E/E_small3.png',
+        'assets/AsteroidKeys/E/E_small4.png',
+    ],
+    'Eb': [
+        'assets/AsteroidKeys/Eb/Eb_small1.png',
+        'assets/AsteroidKeys/Eb/Eb_small2.png',
+        'assets/AsteroidKeys/Eb/Eb_small3.png',
+        'assets/AsteroidKeys/Eb/Eb_small4.png',
+    ],
+    'F': [
+        'assets/AsteroidKeys/F/F_small1.png',
+        'assets/AsteroidKeys/F/F_small2.png',
+        'assets/AsteroidKeys/F/F_small3.png',
+        'assets/AsteroidKeys/F/F_small4.png',
     ],
     'G': [
         'assets/AsteroidKeys/G/G_small1.png',
@@ -107,11 +190,11 @@ const miniAsteroidImagePaths = {
         'assets/AsteroidKeys/G/G_small3.png',
         'assets/AsteroidKeys/G/G_small4.png'
     ],
-    'A': [
-        'assets/AsteroidKeys/A/A_small1.png',
-        'assets/AsteroidKeys/A/A_small2.png',
-        'assets/AsteroidKeys/A/A_small3.png',
-        'assets/AsteroidKeys/A/A_small4.png',
+    'Gb': [
+        'assets/AsteroidKeys/Gb/Gb_small1.png',
+        'assets/AsteroidKeys/Gb/Gb_small2.png',
+        'assets/AsteroidKeys/Gb/Gb_small3.png',
+        'assets/AsteroidKeys/Gb/Gb_small4.png',
     ]
     // Add paths for other keys...
 };
@@ -767,7 +850,6 @@ function setDifficulty(level, overlay, menu) {
 
     overlay.remove(); // Remove the overlay
     menu.remove(); // Remove the menu
-    startGame(); // Start the game
 }
 
 function displayDifficultySelection() {
@@ -1041,6 +1123,7 @@ function drawWaveNumber() {
 function startWave() {
     initializeAsteroidPool();
     displayWaveNumber();
+    selectRandomKeyIfNeeded();
 
     asteroidSpeed += asteroidSpeedIncrease; 
     asteroidSpawnRate *= spawnRateDecrease;
@@ -1109,7 +1192,7 @@ function drawShip() {
 
     // Calculate the ship's angle for rotation
     ctx.translate(ship.x + ship.width / 2, ship.y + ship.height / 2);
-    ctx.rotate(shipAngle);
+    ctx.rotate(shipAngle); // Keep the rotation based on the current angle
     ctx.drawImage(shipImage, -ship.width / 2, -ship.height / 2, ship.width, ship.height);
     
     ctx.restore(); // Restore the context to its original state
@@ -1145,10 +1228,10 @@ function shootHeatSeekingMissile() {
         // Calculate the angle to the target asteroid
         const dx = currentTargetAsteroid.x - (ship.x + ship.width / 2);
         const dy = currentTargetAsteroid.y - (ship.y + ship.height / 2);
-        shipAngle = Math.atan2(dy, dx); // Set the ship angle based on the asteroid's position
+        shipAngle = Math.atan2(dy, dx) + Math.PI / 2; // Rotate 90 degrees to the left
 
-        const missileX = ship.x + ship.width / 2 + Math.cos(shipAngle) * ship.height / 2;
-        const missileY = ship.y + ship.height / 2 + Math.sin(shipAngle) * ship.height / 2;
+        const missileX = ship.x + ship.width / 2; // Center of the ship
+        const missileY = ship.y + ship.height / 2; // Center of the ship
 
         const missile = {
             x: missileX,
@@ -1160,8 +1243,6 @@ function shootHeatSeekingMissile() {
         };
         heatSeekingMissiles.push(missile);
 
-
-
         // Mark the asteroid as targeted
         currentTargetAsteroid.targeted = true;
 
@@ -1169,7 +1250,6 @@ function shootHeatSeekingMissile() {
         playBulletShotSound();
     }
 }
-
 
 
 function createExplosion(x, y) {
@@ -1370,24 +1450,30 @@ function resetGame() {
     score = 0;
     gameOver = false;
     asteroids = [];
+    heatSeekingMissiles = []; // Clear heat-seeking missiles
     activeNotes.clear();
     selectedKey = null;
     ship.width = 50; // Reset ship dimensions
     ship.height = 50;
 
-    // Reset difficulty settings
-    asteroidSpawnRate = difficultySettings[currentDifficulty].asteroidSpawnRate;
-    waveNumber = 1;
-    asteroidsDestroyed = 0;
-    displayingWave = false;
-    shipExplosionCheck = false;
+    // Reset difficulty settings based on the current difficulty
+    const settings = difficultySettings[currentDifficulty]; // Get current settings
+    asteroidSpeed = settings.asteroidSpeed; // Reset to initial asteroid speed
+    asteroidSpawnRate = settings.asteroidSpawnRate; // Reset to initial spawn rate
+    asteroidsToDestroy = settings.asteroidsToDestroy; // Reset to initial asteroids to destroy
+
+    waveNumber = 1; // Reset wave number
+    asteroidsDestroyed = 0; // Reset destroyed asteroids count
+    displayingWave = false; // Reset wave display state
+    shipExplosionCheck = false; // Reset explosion check
+    recentlySpawnedChords = []; // Clear the recently spawned chords
 
     clearInterval(spawnInterval);
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
 
-    displayStartScreen();
+    displayStartScreen(); // Display the start screen
     displayHighScores(); // Ensure high scores are displayed after reset
-    startGame(); // Start the game to ensure everything is in motion
+    update();
 }
 
 
